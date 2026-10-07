@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "legacyImport": false,
+  "refocusDefaults": true,
+  "focusDelayMs": 8000,
+  "workspaces": [
+    {
+      "id": 1,
+      "name": "",
+      "monitor": "HDMI-A-1",
+      "default": true
+    },
+    {
+      "id": 2,
+      "name": "",
+      "monitor": "HDMI-A-1",
+      "default": false
+    },
+    {
+      "id": 3,
+      "name": "",
+      "monitor": "HDMI-A-1",
+      "default": false
+    },
+    {
+      "id": 4,
+      "name": "",
+      "monitor": "HDMI-A-1",
+      "default": false
+    },
+    {
+      "id": 5,
+      "name": "",
+      "monitor": "DP-3",
+      "default": false
+    },
+    {
+      "id": 6,
+      "name": "",
+      "monitor": "DP-3",
+      "default": false
+    },
+    {
+      "id": 7,
+      "name": "",
+      "monitor": "DP-3",
+      "default": false
+    },
+    {
+      "id": 8,
+      "name": "",
+      "monitor": "DP-3",
+      "default": false
+    },
+    {
+      "id": 9,
+      "name": "",
+      "monitor": "DP-3",
+      "default": false
+    },
+    {
+      "id": 10,
+      "name": "",
+      "monitor": "DP-3",
+      "default": false
+    }
+  ],
+  "applications": [
+    {
+      "desktopId": "code",
+      "legacyPath": "",
+      "name": "Visual Studio Code",
+      "windowClass": "code",
+      "matchType": "class",
+      "ruleOptions": {},
+      "placeInWorkspace": true,
+      "command": "code %F",
+      "workspace": 1,
+      "delay": 0,
+      "enabled": true,
+      "autostartSource": "plugin"
+    },
+    {
+      "desktopId": "brave-browser",
+      "legacyPath": "",
+      "name": "Brave",
+      "windowClass": "brave-browser",
+      "matchType": "class",
+      "ruleOptions": {},
+      "placeInWorkspace": true,
+      "command": "brave %U --restore-last-session",
+      "workspace": 2,
+      "delay": 0,
+      "enabled": true,
+      "autostartSource": "plugin"
+    },
+    {
+      "desktopId": "slack",
+      "legacyPath": "",
+      "name": "Slack",
+      "windowClass": "slack",
+      "matchType": "class",
+      "ruleOptions": {},
+      "placeInWorkspace": true,
+      "command": "/usr/bin/slack --gtk-version=3 -s %U",
+      "workspace": 7,
+      "delay": 0,
+      "enabled": true,
+      "autostartSource": "plugin"
+    },
+    {
+      "desktopId": "WhatsApp",
+      "legacyPath": "",
+      "name": "WhatsApp",
+      "windowClass": "brave-web.whatsapp.com__-Default",
+      "matchType": "class",
+      "ruleOptions": {},
+      "placeInWorkspace": true,
+      "command": "omarchy-launch-webapp https://web.whatsapp.com/",
+      "workspace": 8,
+      "delay": 0,
+      "enabled": true,
+      "autostartSource": "plugin"
+    },
+    {
+      "desktopId": "com.github.th-ch.youtube-music",
+      "legacyPath": "",
+      "name": "Pear Desktop",
+      "windowClass": "com.github.th-ch.youtube-music",
+      "matchType": "class",
+      "ruleOptions": {},
+      "placeInWorkspace": true,
+      "command": "pear-desktop",
+      "workspace": 9,
+      "delay": 0,
+      "enabled": true,
+      "autostartSource": "plugin"
+    }
+  ]
+}

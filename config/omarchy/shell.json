@@ -1,0 +1,87 @@
+{
+  "bar": {
+    "centerAnchor": "omarchy.clock",
+    "layout": {
+      "center": [
+        {
+          "id": "omarchy.indicators"
+        },
+        {
+          "id": "omarchy.clock",
+          "format": "ddd d MMM HH:mm",
+          "formatAlt": "d MMMM 'W'ww yyyy",
+          "verticalFormat": "HH\n—\nmm"
+        },
+        {
+          "id": "omarchy.media"
+        },
+        {
+          "id": "omarchy.keyboard-layout"
+        },
+        {
+          "id": "omarchy.weather"
+        },
+        {
+          "id": "omarchy.system-update"
+        }
+      ],
+      "left": [
+        {
+          "id": "omarchy.menu"
+        },
+        {
+          "id": "omarchy.workspaces"
+        }
+      ],
+      "right": [
+        {
+          "id": "omarchy.tray"
+        },
+        {
+          "id": "cruise42.autostart-editor"
+        },
+        {
+          "id": "omarchy.agents"
+        },
+        {
+          "id": "omarchy.bluetooth"
+        },
+        {
+          "id": "omarchy.network"
+        },
+        {
+          "id": "omarchy.audio"
+        },
+        {
+          "exec": "~/.config/omarchy/bar/scripts/cpu-temp",
+          "id": "cpu-temp",
+          "interval": 10,
+          "tooltip": "CPU temperature (Tctl)",
+          "type": "command"
+        },
+        {
+          "exec": "~/.config/omarchy/bar/scripts/cpu-usage",
+          "id": "cpu-usage",
+          "interval": 10,
+          "onClick": "omarchy-launch-or-focus-tui btop",
+          "tooltip": "CPU usage",
+          "type": "command"
+        },
+        {
+          "id": "omarchy.monitor"
+        },
+        {
+          "id": "omarchy.power"
+        }
+      ]
+    },
+    "position": "top",
+    "transparent": false
+  },
+  "idle": {
+    "lock": 300,
+    "screensaver": 900
+  },
+  "plugins": [],
+  "version": 1
+}
